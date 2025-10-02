@@ -21,6 +21,7 @@ import com.synchrony.repositories.UserRepository;
 import com.synchrony.service.CloudinaryServiceImpl;
 import com.synchrony.service.ImageServiceImpl;
 import com.synchrony.entities.*;
+import com.synchrony.messaging.EventPublisher;
 
 @RestController
 @RequestMapping("/api/images")
@@ -31,6 +32,9 @@ public class ImageController {
 
 	@Autowired
 	private ImageServiceImpl imageService;
+	
+	@Autowired
+	private EventPublisher eventPublisher;
 
 	@Autowired
 	private UserRepository userRepository;
@@ -48,7 +52,7 @@ public class ImageController {
 	            (String) result.get("public_id"),
 	            (String) result.get("secure_url")
 	    );
-
+	    eventPublisher.publishImageEvent(user.getUsername(), image.getPublicId());
 	    ImageDto dto = new ImageDto(image.getId(), image.getUrl(), image.getPublicId());
 	    return ResponseEntity.ok(dto);
 	}
