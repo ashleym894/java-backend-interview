@@ -4,13 +4,13 @@ spring:
 
   datasource:
     url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
+    driver-class-name: org.h2.Driver
     username: sa
     password: password
     hikari:
       maximum-pool-size: 50
       minimum-idle: 10
-      idle-timeout: 30000     # 30 seconds
+      idle-timeout: 30000
       max-lifetime: 600000
 
   h2:
@@ -26,6 +26,16 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+  kafka:  
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: image-service-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
 server:
   port: 8080
