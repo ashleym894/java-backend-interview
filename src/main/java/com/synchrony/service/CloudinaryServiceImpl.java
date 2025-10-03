@@ -1,14 +1,16 @@
-package com.synchrony.service;
+package com.synchrony.main.service;
 
 import java.io.IOException;
 import java.util.Map;
 
 import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
 
+@Service
 public class CloudinaryServiceImpl {
 	
 	private final Cloudinary cloudinary;
