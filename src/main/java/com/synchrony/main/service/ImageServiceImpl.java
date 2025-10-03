@@ -1,4 +1,4 @@
-package com.synchrony.service;
+package com.synchrony.main.service;
 
 import java.util.Optional;
 
@@ -7,10 +7,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.synchrony.entities.Images;
-import com.synchrony.entities.User;
-import com.synchrony.interfaces.ImageService;
-import com.synchrony.repositories.ImageRepository;
+import com.synchrony.main.entities.Images;
+import com.synchrony.main.entities.User;
+import com.synchrony.main.interfaces.ImageService;
+import com.synchrony.main.repositories.ImageRepository;
 
 @Service
 public class ImageServiceImpl implements ImageService {

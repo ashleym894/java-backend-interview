@@ -1,4 +1,4 @@
-package com.synchrony.controller;
+package com.synchrony.main.controller;
 
 import java.io.IOException;
 import java.security.Principal;
@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.synchrony.model.ImageDto;
-import com.synchrony.repositories.UserRepository;
-import com.synchrony.service.CloudinaryServiceImpl;
-import com.synchrony.service.ImageServiceImpl;
-import com.synchrony.entities.*;
-import com.synchrony.messaging.EventPublisher;
+import com.synchrony.main.entities.*;
+import com.synchrony.main.messaging.EventPublisher;
+import com.synchrony.main.model.ImageDto;
+import com.synchrony.main.repositories.UserRepository;
+import com.synchrony.main.service.CloudinaryServiceImpl;
+import com.synchrony.main.service.ImageServiceImpl;
 
 @RestController
 @RequestMapping("/api/images")

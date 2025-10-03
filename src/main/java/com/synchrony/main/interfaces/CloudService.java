@@ -1,4 +1,4 @@
-package com.synchrony.interfaces;
+package com.synchrony.main.interfaces;
 
 import java.io.IOException;
 import java.util.Map;

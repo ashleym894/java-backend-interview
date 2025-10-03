@@ -1,7 +1,8 @@
-package com.synchrony.config;
+package com.synchrony.main.config;
 
-import com.synchrony.entities.User;
-import com.synchrony.repositories.UserRepository;
+import com.synchrony.main.entities.User;
+import com.synchrony.main.repositories.UserRepository;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,9 +1,9 @@
-package com.synchrony.interfaces;
+package com.synchrony.main.interfaces;
 
 import java.util.Optional;
 
-import com.synchrony.entities.Images;
-import com.synchrony.entities.User;
+import com.synchrony.main.entities.Images;
+import com.synchrony.main.entities.User;
 
 public interface ImageService {
 

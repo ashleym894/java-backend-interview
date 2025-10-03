@@ -1,4 +1,4 @@
-package com.synchrony.entities;
+package com.synchrony.main.entities;
 
 import java.util.ArrayList;
 import java.util.List;

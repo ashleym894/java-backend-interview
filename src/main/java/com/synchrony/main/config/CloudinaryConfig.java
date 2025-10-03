@@ -1,4 +1,4 @@
-package com.synchrony.config;
+package com.synchrony.main.config;
 
 import com.cloudinary.Cloudinary;
 

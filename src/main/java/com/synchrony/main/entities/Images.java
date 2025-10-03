@@ -1,4 +1,4 @@
-package com.synchrony.entities;
+package com.synchrony.main.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;

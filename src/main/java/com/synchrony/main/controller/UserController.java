@@ -1,4 +1,4 @@
-package com.synchrony.controller;
+package com.synchrony.main.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.synchrony.entities.User;
-import com.synchrony.model.UserDto;
-import com.synchrony.service.UserServiceImpl;
+import com.synchrony.main.entities.User;
+import com.synchrony.main.model.UserDto;
+import com.synchrony.main.service.UserServiceImpl;
 
 @RestController
 public class UserController {

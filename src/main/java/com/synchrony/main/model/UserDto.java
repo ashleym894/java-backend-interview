@@ -1,4 +1,4 @@
-package com.synchrony.model;
+package com.synchrony.main.model;
 
 import lombok.Getter;
 import lombok.Setter;

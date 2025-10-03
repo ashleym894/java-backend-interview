@@ -1,8 +1,10 @@
 package com.synchrony.service;
 
-import com.synchrony.entities.Images;
-import com.synchrony.entities.User;
-import com.synchrony.repositories.ImageRepository;
+import com.synchrony.main.entities.Images;
+import com.synchrony.main.entities.User;
+import com.synchrony.main.repositories.ImageRepository;
+import com.synchrony.main.service.ImageServiceImpl;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

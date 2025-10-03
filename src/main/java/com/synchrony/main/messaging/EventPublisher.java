@@ -1,4 +1,4 @@
-package com.synchrony.messaging;
+package com.synchrony.main.messaging;
 
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;

@@ -1,11 +1,11 @@
-package com.synchrony.service;
+package com.synchrony.main.service;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.synchrony.entities.User;
-import com.synchrony.model.UserDto;
-import com.synchrony.repositories.UserRepository;
+import com.synchrony.main.entities.User;
+import com.synchrony.main.model.UserDto;
+import com.synchrony.main.repositories.UserRepository;
 
 @Service
 public class UserServiceImpl {
