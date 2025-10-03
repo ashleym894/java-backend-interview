@@ -37,10 +37,4 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Images> images = new ArrayList<>();
 
-	public String getUsername() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
 }
