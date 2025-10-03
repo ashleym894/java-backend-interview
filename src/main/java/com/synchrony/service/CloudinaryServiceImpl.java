@@ -1,4 +1,4 @@
-package com.synchrony.main.service;
+package com.synchrony.service;
 
 import java.io.IOException;
 import java.util.Map;
